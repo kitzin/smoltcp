@@ -39,7 +39,7 @@ impl Address {
     pub const MULTICAST_ALL_ROUTERS: Address = Address([224, 0, 0, 2]);
 
     /// Construct an IPv4 address from parts.
-    pub fn new(a0: u8, a1: u8, a2: u8, a3: u8) -> Address {
+    pub const fn new(a0: u8, a1: u8, a2: u8, a3: u8) -> Address {
         Address([a0, a1, a2, a3])
     }
 
