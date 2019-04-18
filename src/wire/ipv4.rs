@@ -125,7 +125,7 @@ impl Cidr {
     ///
     /// # Panics
     /// This function panics if the prefix length is larger than 32.
-    pub fn new(address: Address, prefix_len: u8) -> Cidr {
+    pub const fn new(address: Address, prefix_len: u8) -> Cidr {
         assert!(prefix_len <= 32);
         Cidr { address, prefix_len }
     }
